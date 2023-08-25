@@ -72,25 +72,16 @@ const WeatherCard = ({ city, latitude, longitude }) => {
     };
 
     useEffect(() => {
+        let url = ''
         if (city) {
-            handleCitySubmit();
-            return;
+            url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
         }
-        if (latitude && longitude) {
-            handleLocationSubmit();
-            return;
+        else if (latitude && longitude) {
+            url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
         }
+        fetchWeatherData(url);
+
     }, [city, latitude, longitude])
-
-    const handleCitySubmit = () => {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
-        fetchWeatherData(url);
-    };
-
-    const handleLocationSubmit = () => {
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
-        fetchWeatherData(url);
-    };
 
     return (
         <div>
