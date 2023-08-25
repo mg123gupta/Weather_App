@@ -1,0 +1,160 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.weather-display {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .weather-icon {
+    width: 100px;
+  }
+  
+  .weather-temperature {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .weather-extra-info {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    border-top: 1px solid #c5c5c5;
+  }
+
+
+  .weather-info-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  
+  .weather-info-details {
+    display: grid;
+    font-size: 12px;
+  }
+  
+  .weather-info-value {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .weather-info-label {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 20px;
+  }
+  
+  .info-icon {
+    width: 30px;
+  }
+  
+  .info-content {
+    display: grid;
+    font-size: 12px;
+  }
+  
+  .info-value {
+    font-size: 12px;
+  }
+  
+  .info-label {
+    font-size: 10px;
+  }
+  
+  .app-header {
+    color: #42adfe;
+    padding: 15px;
+    border-bottom: 1px solid #c5c5c5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .app-header button{
+    background: transparent;
+    border: none;
+    color: #42adfe;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .loading-text {
+    padding: 30px 10px;
+    text-align: center;
+    color: gray;
+  }
+  
+  .home-header {
+    color: #42adfe;
+    padding: 15px;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .or-divider {
+    position: relative;
+    margin: 10px 0px;
+  }
+  
+  .or-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+    background: white;
+    padding: 0px 8px;
+    color: #c5c5c5;
+    font-size: 20px;
+    margin-top: -2px;
+  }
+  
+  .get-weather-button {
+    background: #42adfe;
+    color: white;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #42adfe;
+  }
+  
+  .card {
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+  }
